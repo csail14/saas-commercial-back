@@ -1,0 +1,13 @@
+
+<div>
+    <p>Tapez votre nouveau mot de passe 2 fois</p>
+    <% if(error !== null) { %>
+        <p><%=error%></p>
+    <% } %>
+   <form action="/api/v1/user/changePassword/<%=key_id%>" method="POST">
+        <input type="text" name="password1" placeholder="mot de passe"/>
+        <input type="text" name="password2"  placeholder="retapez le mot de passe"/>
+        <input type="submit" value="envoyer" />
+    </form> 
+    
+</div>
