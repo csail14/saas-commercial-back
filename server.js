@@ -49,7 +49,7 @@ mysql.createConnection({
 	}, 10000);
 	
 	app.get('/', (req, res, next)=>{
-	    res.json({status: 200, msg: "welcome to my api babypub"})
+	    res.json({status: 200, msg: "welcome to my api saas-commercial"})
 	})
 	
     userRoutes(app, db);

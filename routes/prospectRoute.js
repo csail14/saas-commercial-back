@@ -27,6 +27,7 @@ module.exports = (app, db)=>{
     })
 
     app.get('/api/v1/prospect/get/all/:user_id',withAuth, async (req,res,next)=>{
+        console.log('all')
         let result = await prospectModel.getAllProspect(req, req.params.user_id);
         if(result.code) {
             console.log(result)
